@@ -1,9 +1,6 @@
 package com.example.InterviewV2.entity;
-
 import lombok.*;
-
 import javax.persistence.*;
-
 @Entity
 @Table(name = "student")
 @Getter

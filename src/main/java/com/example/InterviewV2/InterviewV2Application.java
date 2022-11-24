@@ -1,13 +1,8 @@
 package com.example.InterviewV2;
-
-import com.example.InterviewV2.entity.Student;
 import com.example.InterviewV2.service.StudentService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
-
-import java.util.List;
-
 @SpringBootApplication
 public class InterviewV2Application {
 
@@ -29,7 +24,5 @@ public class InterviewV2Application {
 //		for (int i = 0; i < 2000; i++) {
 //			studentServiceBeen.save(studentServiceBeen.createStudent());
 //		}
-
 	}
-
 }
