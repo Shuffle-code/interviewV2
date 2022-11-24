@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
 @Service
 @RequiredArgsConstructor
 public class StudentService {
@@ -17,26 +16,20 @@ public class StudentService {
     public List<Student> findAll(){
         return studentDao.findAll();
     }
-
     public Optional<Student> findByID(Long id){
         return studentDao.findById(id);
     }
 
-
     public void save(Student student){
         studentDao.save(student);
     }
-
     private String getName(){
         DataFactory df = new DataFactory();
         return df.getFirstName();
     }
-
     public static double getMark(int max) {
         return (double) (Math.random() * ++max);
     }
-
-
     public Student createStudent(){
         return Student.builder().
                 name(getName()).
@@ -47,5 +40,4 @@ public class StudentService {
         studentDao.deleteById(id);
         return true;
     }
-
 }
