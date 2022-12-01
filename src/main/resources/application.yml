@@ -6,3 +6,5 @@ spring:
 storage:
   location: './storage'
 
+server:
+  port: 8091
